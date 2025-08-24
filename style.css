@@ -282,11 +282,93 @@ If you don’t have a style.css file yet → just paste that same CSS inside you
 
 
 ---
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-👉 So no need to make a new folder unless you want to organize your files. For now, pasting inside <style> or your existing style.css is perfect.
+/* General page */
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f172a; /* dark navy */
+  color: #f1f5f9; /* soft white */
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
 
-Do you want me to show you how your whole index.html file should look with the contact form included, so you can copy-paste safely?
+/* Navigation bar */
+header {
+  background: #1e293b;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav a {
+  color: #f1f5f9;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+header nav a:hover {
+  color: #38bdf8; /* accent blue */
+}
 
+/* Sections */
+section {
+  padding: 100px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+section h1, section h2 {
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button, .btn {
+  background: #38bdf8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+button:hover, .btn:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+}
+
+/* Contact form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+form input, form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+form button {
+  align-self: center;
+}
 /* Hero Section */
 #hero {
   height: 100vh; /* full screen */
