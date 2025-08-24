@@ -367,7 +367,7 @@ form textarea {
   min-height: 120px;
 }
 form button {
-  align-self: center;
+  align;
 }
 /* Hero Section */
 #hero {
@@ -394,6 +394,54 @@ form button {
   margin-left: auto;
   margin-right: auto;
 }
-body {
-  font-family: 'Poppins', sans-serif;
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #38bdf8;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}/* Hero Section */
+#hero {
+  height: 100vh; /* full screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  padding: 0 20px;
 }
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #f1f5f9;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #38bdf8;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #0284c7;
+}
+
+
+---
