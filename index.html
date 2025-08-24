@@ -5,6 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brew Haven Coffee</title>
   <style>
+/* Default hidden state */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When "show" is added by JavaScript */
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Header (fades in on load) */
+header {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+header.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+  <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0; padding: 0;
