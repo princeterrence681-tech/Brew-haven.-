@@ -131,3 +131,159 @@ footer {
 .contact-form button:hover {
   background: #5d4037;
 }
+#contact {
+  padding: 40px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #0077ff;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}#contact {
+  padding: 40px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #0077ff;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}Ahh I see where you got confused 😅 I meant CSS styles (not CDs 😂).
+
+You don’t need another folder unless you want to. You’ve got 2 choices again:
+
+
+---
+
+🔹 Option 1: Add to your existing style.css
+
+If you already have a style.css file in your repo → just scroll to the bottom of that file and paste the contact form CSS there.
+
+Example:
+
+
+/* --- Contact Form Styles --- */
+#contact {
+  padding: 40px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #0077ff;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #005bcc;
+}
+
+
+---
+
+🔹 Option 2: Add inside your HTML (quick method)
+
+If you don’t have a style.css file yet → just paste that same CSS inside your HTML:
+
+<head>
+  ...
+  <style>
+    /* --- Contact Form Styles --- */
+    #contact { ... }
+    #contact h2 { ... }
+    form { ... }
+    input, textarea { ... }
+    button { ... }
+    button:hover { ... }
+  </style>
+</head>
+
+
+---
+
+👉 So no need to make a new folder unless you want to organize your files. For now, pasting inside <style> or your existing style.css is perfect.
+
+Do you want me to show you how your whole index.html file should look with the contact form included, so you can copy-paste safely?
+
