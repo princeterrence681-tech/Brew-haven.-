@@ -127,8 +127,7 @@
   <footer>
     <p>&copy; 2025 Brew Haven Coffee</p>
   </footer>
- <script>
-  // Smooth scrolling effect (slower than CSS version)
+ <script>// Smooth scrolling effect (slower than CSS version)
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(e) {
       e.preventDefault();
@@ -152,6 +151,34 @@
   sections.forEach(section => {
     observer.observe(section);
   });
-</script> 
+</script> <script>
+  // Smooth scrolling effect
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    });
+  });
+
+  // Fade-in for sections
+  const sections = document.querySelectorAll("section");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  sections.forEach(section => observer.observe(section));
+
+  // Header fade-in on page load
+  window.addEventListener("load", () => {
+    document.querySelector("header").classList.add("show");
+  });
+</script>
 </body>
 </html>
