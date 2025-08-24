@@ -1,1 +1,90 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #faf5f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #3e2723, #6d4c41);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+header .logo {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+/* Navigation */
+nav {
+  background: #5d4037;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #ffcc80;
+}
+
+/* Sections */
+section {
+  padding: 50px;
+  max-width: 1000px;
+  margin: auto;
+}
+section h2 {
+  color: #3e2723;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d7ccc8;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Menu Grid */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #3e2723;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
